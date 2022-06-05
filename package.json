@@ -1,0 +1,48 @@
+{
+  "name": "safety-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DragonLorde/safety-backend.git"
+  },
+  "author": "dragonLorde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DragonLorde/safety-backend/issues"
+  },
+  "homepage": "https://github.com/DragonLorde/safety-backend#readme",
+  "scripts": {
+    "start": "ts-node-dev --respawn src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "prettier": "prettier --write './src/**/*.(ts|tsx)'"
+  },
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^17.0.40",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-import-resolver-typescript": "2.7.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-react": "7.29.4",
+    "eslint-plugin-react-hooks": "4.4.0",
+    "nodemon": "^2.0.16",
+    "prettier": "2.6.1",
+    "pretty-quick": "3.1.3",
+    "ts-node": "^10.8.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "cors": "^2.8.5",
+    "dot-env": "^0.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  }
+}
