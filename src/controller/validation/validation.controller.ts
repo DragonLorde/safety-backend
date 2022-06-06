@@ -23,14 +23,14 @@ export const getValidation = async (req: Request, res: Response) => {
 
 export const updateValidation = async (req: Request, res: Response) => {
   try {
-    const { tableId, violationEliminatedStatus } = req.body
-    if (!tableId) {
+    const { userId, violationEliminatedStatus } = req.body
+    if (!userId) {
       res.status(400).json({
         status: false,
         error: 'notParams',
       })
     }
-    await ValidationSchema.findByIdAndUpdate({ tabId: tableId }, { violationEliminated: violationEliminatedStatus }).exec()
+    await ValidationSchema.findByIdAndUpdate({ _id: userId }, { violationEliminated: violationEliminatedStatus }).exec()
     const employers = await ValidationSchema.find().exec()
     res.status(200).json({
       ...employers,

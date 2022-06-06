@@ -23,14 +23,14 @@ export const getEmployers = async (req: Request, res: Response) => {
 
 export const deleteEmployers = async (req: Request, res: Response) => {
   try {
-    const { tableId } = req.body
-    if (!tableId) {
+    const { userId } = req.body
+    if (!userId) {
       res.status(400).json({
         status: false,
         error: 'notParams',
       })
     }
-    await Employers.findOneAndRemove({ tabId: tableId }).exec()
+    await Employers.findOneAndRemove({ _id: userId }).exec()
     const employers = await Employers.find().exec()
     res.status(200).json({
       ...employers,

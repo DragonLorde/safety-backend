@@ -1,11 +1,6 @@
 import mongoose from 'mongoose'
 
 const employersSchema = new mongoose.Schema({
-  tabId: {
-    type: Number,
-    required: true,
-    unique: true,
-  },
   surname: {
     type: String,
     required: true,

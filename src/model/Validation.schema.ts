@@ -12,7 +12,7 @@ const validation = new mongoose.Schema({
   },
   violationCount: {
     type: Number,
-    required: true
+    required: true,
   },
   violationEliminated: {
     type: Boolean,
