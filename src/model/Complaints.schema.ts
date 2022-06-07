@@ -1,11 +1,6 @@
 import mongoose from 'mongoose'
 
 const complaints = new mongoose.Schema({
-  complaintsId: {
-    type: Number,
-    required: true,
-    unique: true,
-  },
   surname: {
     type: String,
     required: true,
