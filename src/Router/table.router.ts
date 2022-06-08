@@ -5,10 +5,9 @@ import {
 
 const tableRouter = Router()
 
-tableRouter.put('/setEmployersTable/', getEmployersTable)
-tableRouter.get('/getEmployersTable/', setEmployersTable)
+tableRouter.put('/setEmployersTable/', setEmployersTable)
+tableRouter.get('/getEmployersTable/', getEmployersTable)
 
-tableRouter.put('/setEmployersTableBriefing/', getEmployersTableBriefing)
-tableRouter.get('/getEmployersTableBriefing/', setEmployersTableBriefing)
-
+tableRouter.put('/setEmployersTableBriefing/', setEmployersTableBriefing)
+tableRouter.get('/getEmployersTableBriefing/', getEmployersTableBriefing)
 export default tableRouter

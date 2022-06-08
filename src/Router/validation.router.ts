@@ -4,7 +4,7 @@ import { setValidation, updateValidation, getValidation } from '../controller/va
 const validationRouter = Router()
 
 validationRouter.put('/setEmployers/', setValidation)
-validationRouter.post('/deleteEmployers/', updateValidation)
+validationRouter.post('/updateEmployers/', updateValidation)
 validationRouter.get('/getEmployers/', getValidation)
 
 export default validationRouter
