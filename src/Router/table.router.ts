@@ -11,3 +11,4 @@ tableRouter.get('/getEmployersTable/', getEmployersTable)
 tableRouter.put('/setEmployersTableBriefing/', setEmployersTableBriefing)
 tableRouter.get('/getEmployersTableBriefing/', getEmployersTableBriefing)
 export default tableRouter
+
