@@ -1,11 +1,6 @@
 import mongoose from 'mongoose'
 
 const validation = new mongoose.Schema({
-  validationId: {
-    type: Number,
-    required: true,
-    unique: true,
-  },
   validationDate: {
     type: String,
     required: true,
